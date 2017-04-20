@@ -21,6 +21,11 @@ namespace DailyProgrammer
     /// followed by n integers to calculate the differences.
     /// example: 4 1 4 2 3, n=4, n integers = 1, 4,2,3
     /// output should indicate if it is a jolly or not.
+    /// 
+    /// Expected output description:
+    /// Output some indiation if the sequence is jolly or not:
+    /// IE: 4 1 4 2 3 JOLLY
+  
     class Jollyness
     {
         /// <summary>
@@ -47,7 +52,7 @@ namespace DailyProgrammer
         /// <returns></returns>
         private string ArrayValuesToString(int[] array)
         {
-            string arrayAsString = "";
+            string arrayAsString = array.Length + " ";
             for (int i = 0; i < array.Length; i++)
             {
                 arrayAsString += array[i] + " ";
